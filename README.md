@@ -23,7 +23,7 @@ Here's a basic usage example:
 
 require '/path/to/vendor/autoload.php';
 
-$c = new \Container\Container();
+$c = new \Isholao\Container\Container();
 $c->set('name','ishola'); // $c->name = 'ishola';
 
 if($c->has('name'))
@@ -45,7 +45,7 @@ Protecting an item. Define it will the protect method
 
 require '/path/to/vendor/autoload.php';
 
-$c = new \Container\Container();
+$c = new \Isholao\Container\Container();
 $c->protect('name','ishola');
 
 $c->name = 'ishola'; // throw error
